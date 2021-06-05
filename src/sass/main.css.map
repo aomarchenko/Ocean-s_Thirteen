@@ -4,7 +4,8 @@
     "sources": [
         "main.scss",
         "base/_container.scss",
-        "base/_common.scss"
+        "base/_common.scss",
+        "utils/_variables.scss"
     ],
     "names": [],
     "file": "main.css"
