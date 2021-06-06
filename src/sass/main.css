@@ -191,15 +191,32 @@ body {
   margin-bottom: 66px;
 }
 
-.products__title ::after {
+.products__points {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products__title::after {
   content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 30px);
+          transform: translate(-50%, 30px);
+  display: block;
+  width: 26px;
+  height: 6px;
   background-image: url(../images/products/svg/points.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .products__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -214,5 +231,8 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   border-color: transparent;
+  background-image: url(../images/products/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
