@@ -1,6 +1,11 @@
 .hero {
   background-color: $hero-bg-color;
   padding-top: 135px;
+  padding-bottom: 160px;
+  background-image: url(../images/hero/icecream.png), url(../images/hero/ellipse.png);
+  background-repeat: no-repeat;
+  background-size: 160px 410px, 285px;
+  background-position: bottom right 32px, bottom 75px right;
 }
 
 .hero__title {
@@ -8,6 +13,7 @@
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
+  font-weight: 400;
 
   color: $card-txt-color;
   & span {
@@ -27,13 +33,14 @@
 .hero__button--first {
   border: none;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px 20px;
   margin-right: 8px;
 
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.25;
   text-align: center;
+  font-weight: 400;
 
   background-color: $title-color;
   color: $card-txt-color;
@@ -42,10 +49,13 @@
 .hero__button {
   border: none;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px 20px;
 
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.25;
   text-align: center;
+  font-weight: 400;
+
+  color: $title-color;
 }
