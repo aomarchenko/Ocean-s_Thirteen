@@ -12,6 +12,10 @@
     padding-right: 39px;
 
     padding-top: 161px;
+
+    :not(:last-child) {
+      margin-bottom: 130px;
+    }
   }
 
   &__item--pink {
@@ -64,10 +68,6 @@
 
       background-image: url(../images/products/product3.png);
     }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 130px;
   }
 
   &__title {

@@ -127,6 +127,10 @@ body {
   padding-top: 161px;
 }
 
+.products__item :not(:last-child) {
+  margin-bottom: 130px;
+}
+
 .products__item--pink {
   background-color: #ffb8ca;
 }
@@ -173,10 +177,6 @@ body {
   width: 249px;
   height: 252px;
   background-image: url(../images/products/product3.png);
-}
-
-.products__item:not(:last-child) {
-  margin-bottom: 130px;
 }
 
 .products__title {
