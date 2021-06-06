@@ -1,3 +1,51 @@
 .hero {
   background-color: $hero-bg-color;
+  padding-top: 135px;
+}
+
+.hero__title {
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  color: $card-txt-color;
+  & span {
+    color: $title-color;
+
+    font-size: 48px;
+    line-height: 96.5%;
+  }
+}
+
+.hero__button-list {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero__button--first {
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  margin-right: 8px;
+
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+
+  background-color: $title-color;
+  color: $card-txt-color;
+}
+
+.hero__button {
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
 }
