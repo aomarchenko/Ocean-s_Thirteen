@@ -127,7 +127,7 @@ body {
   padding-top: 161px;
 }
 
-.products__item :not(:last-child) {
+.products__item:not(:last-child) {
   margin-bottom: 130px;
 }
 
@@ -191,6 +191,11 @@ body {
   margin-bottom: 66px;
 }
 
+.products__title ::after {
+  content: '';
+  background-image: url(../images/products/svg/points.svg);
+}
+
 .products__description {
   font-weight: 700;
   font-size: 14px;
@@ -198,5 +203,16 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+
+.products__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

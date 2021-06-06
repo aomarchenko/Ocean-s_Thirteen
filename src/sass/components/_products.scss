@@ -12,10 +12,10 @@
     padding-right: 39px;
 
     padding-top: 161px;
+  }
 
-    :not(:last-child) {
-      margin-bottom: 130px;
-    }
+  &__item:not(:last-child) {
+    margin-bottom: 130px;
   }
 
   &__item--pink {
@@ -82,6 +82,11 @@
     color: $card-txt-color;
 
     margin-bottom: 66px;
+
+    ::after {
+      content: '';
+      background-image: url(../images/products/svg/points.svg);
+    }
   }
 
   &__description {
@@ -93,5 +98,17 @@
     letter-spacing: 0.04em;
 
     color: $card-txt-color;
+  }
+  &__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: $card-txt-color;
+    border-color: transparent;
   }
 }
