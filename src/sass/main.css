@@ -271,6 +271,24 @@ body {
   background-size: contain;
 }
 
+
+.adv_title {
+  color: #d41443;
+  font-family: Titan One;
+  font-size: 58px;
+  line-height: 1.13;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.adv_text {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.02em;
+
 .gallery {
   margin-right: auto;
   margin-left: auto;
