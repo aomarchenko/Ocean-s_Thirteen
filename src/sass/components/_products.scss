@@ -31,6 +31,7 @@
     }
     @media screen and (min-width: $desktop) {
       width: 329px;
+      height: 525px;
       margin-left: 24px;
       flex-basis: calc((100% - 3 * 24px) / 3);
     }
@@ -61,7 +62,7 @@
       background-image: url(../images/products/product1.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
 
       @media screen and (min-width: $tablet) {
         width: 220px;
@@ -69,7 +70,7 @@
         background-image: url(../images/products/product1tab.png);
       }
       @media screen and (min-width: $desktop) {
-        top: -80%;
+        top: -70%;
         width: 335px;
         height: 335px;
         background-image: url(../images/products/product1big.png);
@@ -93,7 +94,7 @@
       background-image: url(../images/products/product2.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
 
       @media screen and (min-width: $tablet) {
         width: 220px;
@@ -101,7 +102,7 @@
         background-image: url(../images/products/product2tab.png);
       }
       @media screen and (min-width: $desktop) {
-        top: -80%;
+        top: -70%;
         width: 335px;
         height: 335px;
         background-image: url(../images/products/product2big.png);
@@ -125,7 +126,7 @@
       background-image: url(../images/products/product3.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size: contain;
 
       @media screen and (min-width: $tablet) {
         width: 220px;
@@ -133,7 +134,7 @@
         background-image: url(../images/products/product3tab.png);
       }
       @media screen and (min-width: $desktop) {
-        top: -80%;
+        top: -70%;
         width: 335px;
         height: 335px;
         background-image: url(../images/products/product3big.png);
@@ -153,6 +154,12 @@
     color: $card-txt-color;
 
     margin-bottom: 66px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 70px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
   }
 
   &__title::after {
@@ -192,6 +199,11 @@
       padding: 0 11px;
       margin-bottom: 40px;
       line-height: 1.76;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      margin-bottom: 62px;
+      padding: 0 44px;
     }
   }
 
