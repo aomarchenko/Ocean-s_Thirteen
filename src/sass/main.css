@@ -191,12 +191,6 @@ body {
   margin-bottom: 66px;
 }
 
-.products__points {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .products__title::after {
   content: '';
   position: absolute;

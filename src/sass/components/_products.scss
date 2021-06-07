@@ -83,11 +83,6 @@
 
     margin-bottom: 66px;
   }
-  &__points {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   &__title::after {
     content: '';
@@ -117,6 +112,7 @@
 
     color: $card-txt-color;
   }
+
   &__btn {
     display: block;
     margin-left: auto;
