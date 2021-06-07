@@ -1,0 +1,40 @@
+.header {
+  background-color: $hero-bg-color;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  background-color: $hero-bg-color;
+}
+
+.mobile__button {
+  position: absolute;
+  right: 20px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  z-index: 2;
+  & .menu__open {
+    display: none;
+  }
+  &.is-open .menu__open {
+    display: block;
+  }
+  &.is-open .menu__close {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
