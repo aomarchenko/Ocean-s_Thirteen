@@ -1,7 +1,8 @@
 <section class="reviews">
+  <h2 class="visually-hidden">Customer reviews</h2>
   <div class="container">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
+    <div class="reviews__slider">
+      <div class="reviews__slide">
         <img
           class="reviews__customer-photo"
           srcset="./images/reviews/customer1.png 1x, ./images/reviews/customer1@2x.png 2x"
@@ -15,20 +16,49 @@
             hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
           </p>
         </div>
+        <p class="reviews__customer-info">Emily, Los Angeles</p>
+      </div>
+      <div class="reviews__slide">
+        <img
+          class="reviews__customer-photo"
+          srcset="./images/reviews/customer2.png 1x, ./images/reviews/customer2@2x.png 2x"
+          src="./images/reviews/customer2.png"
+          alt="Drew, New York"
+          width="85"
+        />
+        <div class="reviews__coment-box">
+          <p class="reviews__coment">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
         <ul class="reviews__dots">
           <li class="reviews__dot"></li>
           <li class="reviews__dot"></li>
           <li class="reviews__dot"></li>
         </ul>
-        <p class="reviews__customer-info">Emily, Los Angeles</p>
+        <p class="reviews__customer-info">Drew, New York</p>
       </div>
-      <div class="swiper-pagination">
-        <ul class="swiper-pagination__list">
-          <li class="swiper-pagination__item swiper-pagination__item--active"></li>
-          <li class="swiper-pagination__item"></li>
-          <li class="swiper-pagination__item"></li>
-        </ul>
+      <div class="reviews__slide">
+        <img
+          class="reviews__customer-photo"
+          srcset="./images/reviews/customer3.png 1x, ./images/reviews/customer3@2x.png 2x"
+          src="./images/reviews/customer3.png"
+          alt="Diana, San Francisco"
+          width="85"
+        />
+        <div class="reviews__coment-box">
+          <p class="reviews__coment">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+        </div>
+
+        <p class="reviews__customer-info">Diana, San Francisco</p>
       </div>
     </div>
   </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/script.js"></script>
