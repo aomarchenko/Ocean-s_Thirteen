@@ -35,3 +35,7 @@ a {
   width: 1px !important;
   overflow: hidden;
 }
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
