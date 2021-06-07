@@ -1,0 +1,124 @@
+.contacts-card-set {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+.card-set-container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1050px;
+}
+.contacts-card-contacts {
+  padding: 40px 45px;
+  border-radius: 24px;
+  background-color: $card-txt-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+.contacts-section-contacts {
+  background: linear-gradient(to top, $footer-bg-color 80%, $card-txt-color 80% 100%);
+  font-family: DM Sans;
+}
+.contacts-card-set > .contacts-card-contacts {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+.location-type-cafe,
+.location-type-truck {
+  @media screen and (max-width: 1279px) {
+    margin-right: 60px;
+  }
+  margin-bottom: 32px;
+  color: $card-txt-color;
+  text-transform: uppercase;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.location-type-cafe {
+  background-color: $second-card-color;
+
+  border-radius: 6px;
+}
+.location-type-truck {
+  background-color: $third-card-color;
+  border-radius: 6px;
+}
+.accent-paragraf {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: $second-text-color;
+}
+.contacts-paragraf {
+  margin-top: 10px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  color: $main-txt-color;
+  border-bottom: 1px solid #e1e1e1;
+}
+.working-time {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: $label-color;
+}
+.contact-links-paragraf {
+  margin-top: 32px;
+  border-top: 1px solid #e1e1e1;
+  padding-top: 32px;
+  padding-bottom: 62px;
+  color: $main-txt-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+}
+.button-container {
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    display: flex;
+    margin-top: 86px;
+    padding-bottom: 165px;
+  }
+}
+
+.location-button-location {
+  background-color: #d41342;
+  color: $card-txt-color;
+  margin-right: 15px;
+  @media screen and (max-width: 1280px) {
+    margin-top: 54px;
+    margin-bottom: 10px;
+  }
+}
+.franchise-button-franchise {
+  background-color: $card-txt-color;
+  color: #d41443;
+}
+.location-button-location,
+.franchise-button-franchise {
+  border-radius: 22px;
+  border: none;
+  height: 44px;
+  padding-right: 39px;
+  padding-left: 39px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  @media screen and (max-width: 1280px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
