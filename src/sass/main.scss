@@ -4,9 +4,13 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+
 @import './base/container';
 @import './base/common';
 @import './utils/variables';
+
+@import './components/about';
+
 @import './components/hero';
 
 
@@ -17,4 +21,5 @@
 
 @import './components/gallery';
 @import './components/reviews';
+
 

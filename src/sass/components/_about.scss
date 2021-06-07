@@ -1,0 +1,107 @@
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.about{
+    background-color: $footer-bg-color;
+    padding-top: 125px;
+    padding-bottom: 97px;
+}
+.about__text{
+    text-align: center;
+}
+.about__label{
+    font-family: $titles-font;
+    font-weight: 400;
+    color: $label-color;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    display: inline-block;
+
+    margin-bottom: 15px;
+}
+.about__title{
+    font-family: $titles-font;
+    font-weight: 400;
+    font-size: 34px;
+    color: $title-color;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+.about__img{
+    width: 280px;
+    height: 280px;
+}
+.about__milk{
+   padding-right: 30px;
+   padding-left: 30px;
+}
+.product__list{
+    list-style: none;
+}
+.product__text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    margin-bottom: 32px;
+}
+.product__text--milk{
+    color: $main-txt-color;
+    margin-bottom: 17px;
+}
+.button__read{
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    border-width: 0px;
+    cursor: pointer;
+    width: 176px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 10px 37px 10px 37px;
+    font-weight: 700;
+    font-family: $main-font;
+    color: $title-color;
+    margin-bottom: 40px;
+}
+.button__read--more{
+    margin-left: 13px;
+}
+.product__image{
+    width: 33px;
+    height: 50px;
+    background-image: url(/images/gallery/milk.jpg);
+}
+.product__image--coctailse{
+    width: 50px;
+    height: 50px;
+    background-image: url(/images/gallery/coctailse.jpg);
+    background-color: $footer-bg-color;
+    color: $footer-bg-color;
+}
+.product__image--icecream{
+    width: 44px;
+    height: 50px;
+    background-image: url(/images/gallery/icecream.jpg);
+}
+.about__card{
+    max-width: 230px;
+}
+.product__image{
+    margin-bottom: 16px;
+}
+.about__milk--spray{
+    width: 100%;
+    background-image: url(/images/gallery/milk-spray.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
