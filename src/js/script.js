@@ -1,6 +1,7 @@
-$(document).ready(function () {
+$(function () {
   $('.reviews__slider').slick({
-    arrows: false,
+    infinite: true,
     dots: true,
+    arrows: false,
   });
 });
