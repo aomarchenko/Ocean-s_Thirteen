@@ -2,7 +2,7 @@
   &__products {
     padding: 121px 20px 98px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       padding: 122px 34px 112px;
     }
   }
@@ -19,7 +19,7 @@
 
     margin-bottom: 15px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 26px;
       line-height: 1.15;
     }
@@ -34,7 +34,7 @@
     text-transform: uppercase;
 
     color: $title-color;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 48px;
       line-height: 1.15;
     }

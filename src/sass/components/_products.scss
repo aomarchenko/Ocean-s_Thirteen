@@ -2,7 +2,7 @@
   list-style: none;
   margin-top: 144px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     margin-top: 150px;
 
@@ -18,7 +18,7 @@
 
     padding-top: 161px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       padding-top: 152px;
       width: 220px;
       height: 485px;
@@ -31,7 +31,7 @@
   &__item:not(:last-child) {
     margin-bottom: 130px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 0;
     }
   }
@@ -135,7 +135,7 @@
 
     color: $card-txt-color;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       padding: 0 11px;
       margin-bottom: 40px;
       line-height: 1.76;
