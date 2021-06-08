@@ -1,9 +1,12 @@
 .section {
   &__products {
-    padding: 121px 20px 98px;
+    padding: 121px 0 98px;
 
-    @media screen and (min-width: 768px) {
-      padding: 122px 34px 112px;
+    @media screen and (min-width: $tablet) {
+      padding: 122px 0 112px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 127px 0 119px;
     }
   }
 
@@ -19,9 +22,14 @@
 
     margin-bottom: 15px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       font-size: 26px;
       line-height: 1.15;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
     }
   }
   &__title {
@@ -34,9 +42,15 @@
     text-transform: uppercase;
 
     color: $title-color;
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: $tablet) {
       font-size: 48px;
       line-height: 1.15;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
     }
   }
 }
