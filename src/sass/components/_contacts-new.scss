@@ -11,12 +11,13 @@
     background: linear-gradient(to top, #fff5f6 92%, #fff 92% 100%);
   }
   @media screen and (min-width: 768px) {
+    padding-top: 0;
     max-width: 1200px;
-    background: linear-gradient(to top, #fff5f6 92%, #fff 92% 100%);
+    background: linear-gradient(to top, #fff5f6 89%, #fff 89% 100%);
   }
   @media screen and (min-width: 1200px) {
-    width: 100%;
-    background: linear-gradient(to top, #fff5f6 92%, #fff 92% 100%);
+    max-width: 1600px;
+    background: linear-gradient(to top, #fff5f6 87%, #fff 87% 100%);
   }
 }
 .contacts__chain {
@@ -28,8 +29,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -20px;
   }
   @media screen and (min-width: 1200px) {
+    margin-right: -30px;
   }
 }
 .contacts__card {
@@ -40,18 +44,25 @@
   padding: 43px 20px;
   background-color: #fff;
   margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767.9px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
     padding: 50px 31px;
-    margin-bottom: 131px;
+    margin-bottom: 81px;
     margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+    margin-right: 30px;
+    padding: 51px 44px 62px 43px;
+    margin-bottom: 86px;
   }
 }
 .contacts__foodtruck {
@@ -71,6 +82,10 @@
     margin-bottom: 30px;
     width: 138px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__cafe {
   font-size: 12px;
@@ -89,6 +104,10 @@
     width: 73px;
     font-size: 16px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts__city {
   font-size: 16px;
@@ -100,6 +119,11 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 14px;
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 10px;
+    font-size: 16px;
   }
 }
 .contacts__fish {
@@ -113,6 +137,12 @@
     font-size: 14px;
     line-height: 1.66;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 .contacts__schedule {
   padding-top: 25px;
@@ -124,6 +154,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 .contacts__timetable {
   font-size: 12px;
@@ -133,6 +168,10 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .contacts__time {
   font-size: 12px;
@@ -141,6 +180,10 @@
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
   }
 }
 .contacts__weekend {
@@ -153,12 +196,21 @@
     font-size: 14px;
     margin-top: 16px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    margin-top: 15px;
+  }
 }
 .contacts__connection {
   margin-top: 25px;
 
   @media screen and (min-width: 768px) {
     margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
   }
 }
 .contacts__tel {
@@ -171,6 +223,10 @@
     font-size: 14px;
     line-height: 1.83;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .contacts__mail {
   font-size: 12px;
@@ -182,13 +238,24 @@
     font-size: 14px;
     line-height: 1.83;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .contacts__button {
   display: block;
   text-align: center;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
+    margin-bottom: 73px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 85px;
   }
 }
 .contacts__location {
@@ -207,7 +274,15 @@
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     margin-bottom: 0;
+    margin-right: 95px;
+    width: 191px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+    margin-right: 15px;
   }
 }
 .contacts__franchise {
@@ -226,5 +301,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    width: 174px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 180px;
   }
 }
