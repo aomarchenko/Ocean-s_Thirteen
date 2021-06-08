@@ -9,8 +9,40 @@
   align-items: center;
   padding-top: 6px;
   background-color: $hero-bg-color;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+    
+  }
 }
-
+.button.button--close{
+  margin: 0;
+  @media screen and (max-width: 767.98px){
+    display: none;
+    
+  }
+  }
+.button__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  height: 44px;
+  margin-top: 0px;
+  border: none;
+  color: $title-color;
+  background-color: $card-txt-color;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  border-radius: 22px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.buttom__menu--close{
+  min-width: 160px;
+}
 .mobile__button {
   position: absolute;
   right: 20px;
@@ -32,6 +64,11 @@
   }
   &.is-open .menu__close {
     display: none;
+  }
+  @media screen  and (min-width: 768px) {
+    left: 494px;
+    top: 52px;
+    
   }
 
   @media screen and (min-width: 1200px) {

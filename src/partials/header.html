@@ -1,16 +1,23 @@
 <header class="header">
   <div class="container header-container">
-    <img class="logo" src="./images/header/logo.png" alt="Логотип" />
+    <div>
+    <img class="logo" src="./images/header/logo.png" alt="Логотип" /></div>
+    <div>
     <button type="button" class="mobile__button is-open" aria-expended="false" data-menu-button>
       <svg class="mobile__icon" width="20" height="20">
         <use class="menu__close" href="./images/header/svg-header.svg#icon-close"></use>
         <use class="menu__open" href="./images/header/svg-header.svg#icon-open"></use>
       </svg>
     </button>
-
+  </div>
+  <div >
+    <div class="button button--close">
+      <button type="button" class="button__menu button__menu--close">Buy now</button>
+    </div>
+<!--Мобильное меню-->
     <div class="mobile__menu" id="mobile__menu" data-menu>
-      <div class="button">
-        <button type="button" class="button__menu">Buy now</button>
+      <div class="button button--open">
+        <button type="button" class="button__menu button__menu--open">Buy now</button>
       </div>
       <div>
         <nav class="navigation">
@@ -35,4 +42,5 @@
       </div>
     </div>
   </div>
+</div>
 </header>
