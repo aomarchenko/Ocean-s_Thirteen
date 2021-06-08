@@ -4,8 +4,17 @@
   padding-bottom: 160px;
   background-image: url(../images/hero/icecream.png), url(../images/hero/ellipse.png);
   background-repeat: no-repeat;
-  background-size: 160px 410px, 285px;
-  background-position: bottom right 32px, bottom 75px right;
+  background-size: 170px 410px, 344px;
+  background-position: bottom right 32px, bottom 75px right -62px;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    background-size: 143px 336px, 324px;
+    background-position: bottom right 247px, bottom 46px right 137px;
+
+    padding-top: 15px;
+  }
 }
 
 .hero__title {
@@ -33,7 +42,7 @@
 .hero__button--first {
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 7px 15px;
   margin-right: 8px;
 
   font-family: DM Sans;
@@ -49,7 +58,7 @@
 .hero__button {
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 7px 15px;
 
   font-family: DM Sans;
   font-size: 8px;
@@ -58,4 +67,5 @@
   font-weight: 400;
 
   color: $title-color;
+  background-color: $card-txt-color;
 }
