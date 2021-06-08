@@ -3,8 +3,10 @@
     margin: 0;
     padding: 0;
 }
-.about{
+.section{
     background-color: $footer-bg-color;
+}
+.about{
     padding-top: 125px;
     padding-bottom: 97px;
 }
@@ -21,6 +23,10 @@
     display: inline-block;
 
     margin-bottom: 15px;
+    @media screen and (min-width:768px){
+        font-size: 26px;
+        line-height: 1.15;
+    }
 }
 .about__title{
     font-family: $titles-font;
@@ -32,10 +38,17 @@
     text-transform: uppercase;
 
     margin-bottom: 25px;
+    @media screen and (min-width:768px){
+        font-size: 48px;
+        line-height: 1.15;
+    }
 }
 .about__img{
     width: 280px;
     height: 280px;
+    // @media screen and (min-width:768px){
+    //     width: ;
+    // }
 }
 .about__milk{
    padding-right: 30px;
@@ -100,8 +113,13 @@
     margin-bottom: 16px;
 }
 .about__milk--spray{
+    @media screen and (max-width:320px){
     width: 100%;
+    height: 133px;
     background-image: url(/images/gallery/milk-spray.png);
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    top:900px
+    }
 }
