@@ -5,6 +5,16 @@
 }
 .about__section{
     background-color: $footer-bg-color;
+    position: relative;
+    @media screen and (min-width:1200px){
+    background-image: url(/images/gallery/big-milk-spray.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    background-position: center;
+    background-position-y: 390px;
+    }
 }
 .about{
     padding-top: 130px;
@@ -14,6 +24,9 @@
     @media screen and (min-width:768px){
         display: flex;
         margin-top: 50px;
+    }
+    @media screen and (min-width:1200px){
+        margin-left: 74px;
     }
 }
 .about__text{
@@ -33,6 +46,10 @@
         font-size: 26px;
         line-height: 1.15;
     }
+    @media screen and (min-width:1200px){
+        font-size: 30px;
+        line-height: 1.13;
+    }
 }
 .about__title{
     font-family: $titles-font;
@@ -48,6 +65,10 @@
         font-size: 48px;
         line-height: 1.15;
     }
+    @media screen and (min-width:1200px){
+        font-size: 58px;
+        line-height: 1.13;
+    }
 }
 .about__img{
     width: 280px;
@@ -60,6 +81,8 @@
     @media screen and (min-width:1200px){
         width:  516px;
         height: 516px;
+        margin-right: 74px;
+    
     }
 }
 .about__milk{
@@ -68,7 +91,11 @@
    max-width: 340px;
    @media screen and (min-width:768px){
        padding: 0;
-       margin-top: 50px;
+       margin-top: 100px;
+   }
+   @media screen and (min-width:1200px){
+        padding: 0;
+        max-width: 463px;
    }
 }
 .product__list{
@@ -83,6 +110,12 @@
         font-size: 14px;
         line-height: 1.78;
     }
+    @media screen and (min-width:1200px){
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        margin-bottom: 35px;
+    }
 }
 .product__text--milk{
     color: $main-txt-color;
@@ -91,6 +124,9 @@
 .product__text--pos{
     @media screen and (min-width:768px){
         margin-bottom: 62px;
+    }
+    @media screen and (min-width:1200px){
+        margin-bottom: 45px;
     }
 }
 .button__read{
@@ -145,11 +181,10 @@
 .about__milk--spray{
     @media screen and (max-width:320px){
     width: 100%;
-    height: 133px;
     background-image: url(/images/gallery/milk-spray.png);
     background-repeat: no-repeat;
     background-position: center;
-    position: absolute;
-    top:777px
+    position: relative;
+    background-position-y: 720px;
     }
 }
