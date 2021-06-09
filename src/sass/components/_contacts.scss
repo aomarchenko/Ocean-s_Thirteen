@@ -129,3 +129,13 @@
     margin-right: auto;
   }
 }
+.location-button-location::after {
+  display: inline-block;
+  margin-left: 16px;
+  width: 5px;
+  height: 8px;
+  content: '';
+  background-image: url('/images/header/vector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
