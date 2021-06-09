@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/script.js"],"names":["$","slick","infinite","dots","arrows"],"mappings":";AAAAA,EAAE,WACAA,EAAE,oBAAoBC,MAAM,CAC1BC,UAAU,EACVC,MAAM,EACNC,QAAQ","file":"script.2acf281e.js","sourceRoot":"../src","sourcesContent":["$(function () {\n  $('.reviews__slider').slick({\n    infinite: true,\n    dots: true,\n    arrows: false,\n  });\n});\n"]}
