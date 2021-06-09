@@ -1,6 +1,4 @@
-/*.header {
-  background-color: $hero-bg-color;
-}*/
+
 
 .header {
   position: relative;
@@ -8,7 +6,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 6px;
-  background-color: $hero-bg-color;
+
   @media screen and (min-width: 768px) {
     padding-top: 37px;
     padding-left: 34px;
@@ -79,6 +77,7 @@
   background-image: url('/images/header/vector.svg');
   background-repeat: no-repeat;
   background-size: contain;
+
 }
 .mobile__button {
   position: absolute;
