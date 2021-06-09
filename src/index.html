@@ -59,6 +59,8 @@
 
     <include src="./partials/footer.html"></include>
 
+    <include src="./partials/modal-locator.html"></include>
+
 
 
     <script src="./js/mobile-menu.js"></script>
@@ -75,6 +77,22 @@
         }, 500);
       }
     </script>
+    <script>
+    (() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+</script>
 
     <script src="./index.js"></script>
   </body>

@@ -1,0 +1,72 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $footer-bg-color;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  background-color: $second-card-color;
+  border-radius: 4px;
+  line-height: 1.16;
+  padding: 20px;
+  letter-spacing: 0.01em;
+  color: $label-color;
+  font-size: 12px;
+
+}
+
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 5px;
+  background-color: $card-txt-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;}
+ 
+
+.modal-close-btn .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $card-txt-color;
+  width: 18px;
+  height: 18px;}
+  .modal-close-btn .icon:hover{
+    fill: $label-color;
+  }
+  .map-frame {
+      width:700px;
+      height:480px;
+      @media screen and (max-width: 480px) {
+      width:290px;
+  }}
