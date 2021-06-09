@@ -14,6 +14,7 @@
     background-position: bottom right 247px, bottom 46px right 137px;
 
     padding-top: 15px;
+    padding-bottom: 28px;
   }
 }
 
@@ -30,6 +31,14 @@
 
     font-size: 48px;
     line-height: 96.5%;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.13;
+    & span {
+      font-size: 34px;
+      line-height: 90.5%;
+    }
   }
 }
 
@@ -51,6 +60,8 @@
   text-align: center;
   font-weight: 400;
 
+  cursor: pointer;
+
   background-color: $title-color;
   color: $card-txt-color;
 }
@@ -66,6 +77,92 @@
   text-align: center;
   font-weight: 400;
 
+  cursor: pointer;
+
   color: $title-color;
   background-color: $card-txt-color;
+}
+
+.hero__franchise {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12px;
+    right: 34px;
+  }
+}
+.hero__franchise-number {
+  font-family: $titles-font;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+
+  color: $title-color;
+}
+.hero__franchise-text {
+  font-family: $main-font;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+
+  color: $card-txt-color;
+}
+
+.hero__franchise-thumb {
+  background-image: url(../images/hero/white-ellipse.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: top right;
+}
+
+.hero__adv-box {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.hero__girl-pic {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+  }
+}
+
+.hero__adv-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 114px;
+}
+.hero__adv-text {
+  font-family: $main-font;
+  font-size: 8px;
+  line-height: 1.5;
+
+  color: $main-white-color;
+}
+
+.unknow-button {
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  margin-top: 7px;
+
+  background-image: url(../images/hero/arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  cursor: pointer;
 }
