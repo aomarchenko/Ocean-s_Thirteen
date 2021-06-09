@@ -16,3 +16,11 @@
     background-position: bottom right 450px, bottom 75px right 267px;
   }
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-header {
+    background-image: url(../images/hero/icecream@2x.png), url(../images/hero/ellipse@2x.png);
+  }
+}

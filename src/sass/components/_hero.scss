@@ -8,6 +8,8 @@
     padding-top: 15px;
     padding-bottom: 28px;
   }
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hero__title {
@@ -31,6 +33,15 @@
       font-size: 34px;
       line-height: 90.5%;
     }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.15;
+    & span {
+      font-size: 58px;
+      line-height: 90.5%;
+    }
+    margin-top: 84px;
   }
 }
 
@@ -56,6 +67,14 @@
 
   background-color: $title-color;
   color: $card-txt-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    width: 102px;
+    height: 40px;
+    margin-right: 15px;
+  }
 }
 
 .hero__button {
@@ -73,6 +92,13 @@
 
   color: $title-color;
   background-color: $card-txt-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    width: 138px;
+    height: 40px;
+  }
 }
 
 .hero__franchise {
@@ -85,6 +111,10 @@
     top: 12px;
     right: 34px;
   }
+  @media screen and (min-width: 1280px) {
+    top: 74px;
+    right: 97px;
+  }
 }
 .hero__franchise-number {
   font-family: $titles-font;
@@ -94,6 +124,11 @@
   letter-spacing: 0.04em;
 
   color: $title-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 .hero__franchise-text {
   font-family: $main-font;
@@ -102,6 +137,11 @@
   text-align: center;
 
   color: $card-txt-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .hero__franchise-thumb {
@@ -110,6 +150,18 @@
   background-size: 16px;
   background-position: top right;
   margin-bottom: 13px;
+
+  @media screen and (min-width: 1280px) {
+    background-size: 30px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero__franchise-thumb {
+    background-image: url(../images/hero/white-ellipse@2x.png);
+  }
 }
 
 .hero__adv-box {
@@ -129,6 +181,24 @@
     position: absolute;
     bottom: 0;
     right: 34px;
+    width: 168px;
+    height: 133px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 293px;
+    height: 232px;
+    right: 109px;
+  }
+}
+
+.hero__adv-milk {
+  width: 124px;
+  height: 126px;
+
+  @media screen and (min-width: 1280px) {
+    width: 188px;
+    height: 191px;
+    margin-left: -35px;
   }
 }
 
@@ -137,6 +207,9 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 114px;
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+  }
 }
 .hero__adv-text {
   font-family: $main-font;
@@ -144,6 +217,11 @@
   line-height: 1.5;
 
   color: $main-white-color;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 30px;
+  }
 }
 
 .unknow-button {
@@ -159,4 +237,20 @@
   background-size: cover;
 
   cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    width: 24px;
+    height: 24px;
+
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .unknow-button {
+    background-image: url(../images/hero/arrow@2x.png);
+  }
 }
