@@ -1,16 +1,84 @@
-.header {
-  // background-color: $hero-bg-color;
-}
 
-.header-container {
+
+.header {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 6px;
-  // background-color: $hero-bg-color;
-}
 
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+    padding-left: 34px;
+    padding-right: 34px;
+    justify-content: space-between;
+  }
+}
+.header__nav{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.button.button--close{
+  margin: 0;
+  @media screen and (max-width: 767.98px){
+    display: none;
+  }
+  @media screen and (min-width: 1280px){
+    margin-left: 110px;
+    
+  }
+  }
+.button__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding-left: 50px;*/
+  width: 160px;
+  height: 44px;
+  /*margin-top: 0px;*/
+  border: none;
+  color: $title-color;
+  background-color: $card-txt-color;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  border-radius: 22px;
+  text-decoration: none;
+  cursor: pointer;
+  /*@media screen and (max-width: 1279.98px){
+    width: 210px;
+    
+  }*/
+}
+.button__menu--close{
+  width: 160px;
+}
+.button__menu--open{
+    @media screen and (min-width: 768px) {
+    min-width: 160px;
+       }
+       @media screen and (min-width: 1280px){
+         display: none;
+       }
+}
+.button__menu::after {
+  display: inline-block;
+  /*padding-top: 19px;
+  padding-right: 49px;*/
+  margin-left: 16px;
+  width: 5px;
+  height: 8px;
+  /*margin-right: 37px;*/
+  content: '';
+  background-image: url('/images/header/vector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
 .mobile__button {
   position: absolute;
   right: 20px;
@@ -29,12 +97,18 @@
   }
   &.is-open .menu__open {
     display: block;
+    
   }
   &.is-open .menu__close {
     display: none;
   }
+  @media screen  and (min-width: 768px) {
+    left: 524px;
+    top: 52px;
+    
+  }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
