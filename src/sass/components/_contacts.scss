@@ -16,6 +16,9 @@
   border-radius: 24px;
   background-color: $card-txt-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  &:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 }
 .contacts-section-contacts {
   background: linear-gradient(to top, $footer-bg-color 80%, $card-txt-color 80% 100%);
