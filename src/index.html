@@ -21,29 +21,22 @@
     />
   </head>
   <body>
-
     <div class="preloader">
-    <div class="ice-container">
-      <div class="icecream">
-        <div class="flavor">
-          <div class="flavours"></div>
+      <div class="ice-container">
+        <div class="icecream">
+          <div class="flavor">
+            <div class="flavours"></div>
+          </div>
+          <div class="stick"></div>
         </div>
-        <div class="stick"></div>
       </div>
     </div>
-  </div>
 
+    <div class="hero-header">
+      <include src="./partials/header.html"></include>
 
-
-  
-
-
-  <div class="hero-header">
-
-    <include src="./partials/header.html"></include>
-
-    <include src="./partials/hero.html"></include>
-  </div>
+      <include src="./partials/hero.html"></include>
+    </div>
 
     <include src="./partials/products.html"></include>
 
@@ -53,15 +46,13 @@
 
     <include src="./partials/gallery.html"></include>
 
-    <include src="./partials/reviews.html"></include>
+    <!-- <include src="./partials/reviews.html"></include> -->
 
     <include src="./partials/contacts.html"></include>
 
     <include src="./partials/footer.html"></include>
 
     <include src="./partials/modal-locator.html"></include>
-
-
 
     <script src="./js/mobile-menu.js"></script>
 
@@ -75,24 +66,24 @@
           document.body.classList.add('loaded');
           document.body.classList.remove('loaded_hiding');
         }, 500);
-      }
+      };
     </script>
     <script>
-    (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
-</script>
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
 
     <script src="./index.js"></script>
   </body>
