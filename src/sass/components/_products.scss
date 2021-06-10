@@ -54,7 +54,7 @@
   &__item--pink {
     background-color: $hero-bg-color;
 
-    ::before {
+    &::before {
       content: '';
       position: absolute;
       top: -50%;
@@ -70,23 +70,24 @@
       background-position: center;
       background-size: contain;
 
-      // @media screen and (min-width: $tablet) {
-      //   width: 220px;
-      //   height: 224px;
-      //   background-image: url(../images/products/product1tab.png);
-      // }
-      // @media screen and (min-width: $desktop) {
-      //   top: -70%;
-      //   width: 335px;
-      //   height: 335px;
-      //   background-image: url(../images/products/product1big.png);
-      // }
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+        height: 224px;
+        background-image: url(../images/products/product1tab.png);
+      }
+      @media screen and (min-width: $desktop) {
+        top: -70%;
+        width: 335px;
+        height: 335px;
+        background-image: url(../images/products/product1big.png);
+      }
     }
   }
+
   &__item--yellow {
     background-color: $second-card-color;
 
-    ::before {
+    &::before {
       content: '';
       position: absolute;
       top: -50%;
@@ -102,23 +103,23 @@
       background-position: center;
       background-size: contain;
 
-      // @media screen and (min-width: $tablet) {
-      //   width: 220px;
-      //   height: 224px;
-      //   background-image: url(../images/products/product2tab.png);
-      // }
-      // @media screen and (min-width: $desktop) {
-      //   top: -70%;
-      //   width: 335px;
-      //   height: 335px;
-      //   background-image: url(../images/products/product2big.png);
-      // }
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+        height: 224px;
+        background-image: url(../images/products/product2tab.png);
+      }
+      @media screen and (min-width: $desktop) {
+        top: -70%;
+        width: 335px;
+        height: 335px;
+        background-image: url(../images/products/product2big.png);
+      }
     }
   }
 
   &__item--green {
     background-color: $third-card-color;
-    ::before {
+    &::before {
       content: '';
       position: absolute;
       top: -50%;
@@ -134,19 +135,19 @@
       background-position: center;
       background-size: contain;
 
-      // @media screen and (min-width: $tablet) and (max-width: 767px) {
-      //   width: 220px;
-      //   height: 224px;
-      //   background-image: url(../images/products/product3tab.png);
-      //   background-repeat: no-repeat;
-      // }
-      // @media screen and (min-width: $desktop) {
-      //   top: -70%;
-      //   width: 335px;
-      //   height: 335px;
-      //   background-image: url(../images/products/product3big.png);
-      //   background-repeat: no-repeat;
-      // }
+      @media screen and (min-width: $tablet) and (max-width: 767px) {
+        width: 220px;
+        height: 224px;
+        background-image: url(../images/products/product3tab.png);
+        background-repeat: no-repeat;
+      }
+      @media screen and (min-width: $desktop) {
+        top: -70%;
+        width: 335px;
+        height: 335px;
+        background-image: url(../images/products/product3big.png);
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -234,13 +235,9 @@
     border-color: transparent;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // &:hover,
-    // &:focus {
-    //   transform: rotate(-90deg);
-    // }
+    &:hover,
+    &:focus {
+      transform: rotate(-90deg);
+    }
   }
-}
-
-.products__btn:hover {
-  transform: rotate(-90deg);
 }
