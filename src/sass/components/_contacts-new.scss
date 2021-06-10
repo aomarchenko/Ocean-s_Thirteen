@@ -270,15 +270,24 @@
 }
 .contacts__button {
   display: block;
+  width: 161px;
   text-align: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 161px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    width: 367px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 393px;
   }
 }
 .contacts__location {
@@ -307,6 +316,17 @@
     width: 198px;
   }
 }
+.contacts__location::after {
+  display: inline-block;
+  margin-left: 16px;
+  width: 5px;
+  height: 8px;
+  content: '';
+  color: $card-txt-color;
+  background-image: url('/images/vector-white.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .contacts__franchise {
   margin-bottom: 113px;
   font-weight: 700;
@@ -329,4 +349,19 @@
   @media screen and (min-width: 1280px) {
     width: 180px;
   }
+}
+.contacts__franchise::after {
+  display: inline-block;
+  margin-left: 16px;
+  width: 5px;
+  height: 8px;
+  content: '';
+  color: $title-color;
+  background-image: url('/images/header/vector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contacts__franchise:hover,
+.contacts__franchise:focus {
+  background-color: #ecebeb;
 }
