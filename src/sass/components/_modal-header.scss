@@ -28,10 +28,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 padding: 35px;
 
 background: $hero-bg-color;
-background-image: url(../images/hero/icecream.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
 
 border-radius: 10px;
 
@@ -40,10 +36,15 @@ width: 300px;
 max-height: 950px;
 height: 100%;
 overflow: scroll;
+background-image: none;
 }
 @media screen and (min-width: 768px){
 width: 500px;
 height: 850px;
+background-image: url(../images/hero/icecream.png);
+background-repeat: no-repeat;
+background-position: right bottom;
+background-size: auto;
 }
 }
 
@@ -122,8 +123,31 @@ height: 850px;
   .checkbox__title{
     display: flex;
     align-items: baseline;
+    text-decoration: underline;
+  }
+  .checkbox{
+    appearance: none;
+
+    &:checked + .checkbox__icon {
+      background-color: $hero-bg-color;
+      display: inline-block;
+    margin-right: 5px;
+    padding: 0;
+    border: 2px solid $hero-bg-color;
+    border-radius: 5px;
+    fill: $title-color;
+      
+    }
   }
   
+  .checkbox__label {
+    display: block;
+  }
+  
+
+  .checkbox__icon{
+    display: none;
+      }
   .form__button{
     border: none;
     border-radius: 20px;
@@ -143,7 +167,7 @@ height: 850px;
     resize: none;
     height: 100%;
     font-size: 12px;
-    padding: 12px 16px;
+    
   }
 .form__field,
 .form__comments {
