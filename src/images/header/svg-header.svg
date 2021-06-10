@@ -12,5 +12,8 @@
 <path fill="none" stroke="#d41443" stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #d41443)" d="M0 16h45.714"></path>
 <path fill="none" stroke="#d41443" stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #d41443)" d="M0 29.714h45.714"></path>
 </symbol>
+<symbol id="icon-check" viewBox="0 0 42 32">
+<path fill="#fff" stroke="#fff" stroke-width="0.64" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
+</symbol>
 </defs>
 </svg>
