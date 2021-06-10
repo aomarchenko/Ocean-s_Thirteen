@@ -41,13 +41,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
+    margin-bottom: 144px;
+
     color: $title-color;
 
     @media screen and (min-width: $tablet) {
+      margin-bottom: 150px;
       font-size: 48px;
       line-height: 1.15;
     }
     @media screen and (min-width: $desktop) {
+      margin-bottom: 259px;
       font-size: 58px;
       line-height: 1.14;
       letter-spacing: 0.06em;
