@@ -7,12 +7,7 @@
     margin-top: -30px;
   }
 }
-// .card-set-container {
-//   @media screen and (max-width: 1279px) {
-//   // margin-right: auto;
-//   // margin-left: auto;
-//   width: 1050px;
-// }}
+
 .contacts-card-contacts {
   padding: 40px 45px;
   border-radius: 24px;
@@ -21,7 +16,12 @@
   &:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
+
+  @media screen and (min-width:768px){
+    padding: 20px 25px;
+  }
 }
+
 .contacts-section-contacts {
   background-image:  linear-gradient(to top, $footer-bg-color 80%, $card-txt-color 80% 100%);
   font-family: DM Sans;
@@ -31,21 +31,9 @@
     background-repeat: no-repeat;
     background-position: left top 20%;
     background-size: contain;
-
-
   }
-    
-  
-  
- 
-
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(47, 48, 58, 0.4),
-  //     rgba(47, 48, 58, 0.4)
-  //   ),
-  //   url("../images/hero.jpg");
 }
+
 .contacts-card-set > .contacts-card-contacts {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
@@ -54,9 +42,9 @@
     margin-top: 30px;
   }
 }
+
 .location-type-cafe,
 .location-type-truck {
-  
   display: inline-block;
   padding-left: 16px;
   padding-right: 16px;
@@ -71,15 +59,17 @@
   text-align: center;
   letter-spacing: 0.04em;
 }
+
 .location-type-cafe {
   background-color: $second-card-color;
-
   border-radius: 6px;
 }
+
 .location-type-truck {
   background-color: $third-card-color;
   border-radius: 6px;
 }
+
 .accent-paragraf {
   font-weight: 500;
   font-size: 16px;
@@ -87,6 +77,7 @@
   letter-spacing: 0.04em;
   color: $second-text-color;
 }
+
 .contacts-paragraf {
   margin-top: 10px;
   margin-bottom: 32px;
@@ -94,12 +85,14 @@
   color: $main-txt-color;
   border-bottom: 1px solid #e1e1e1;
 }
+
 .working-time {
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
   color: $label-color;
 }
+
 .contact-links-paragraf {
   margin-top: 32px;
   border-top: 1px solid #e1e1e1;
@@ -115,6 +108,7 @@
 }
 
 .button-container {
+
   @media screen and (min-width: 1280px) {
     justify-content: center;
     display: flex;
@@ -127,15 +121,18 @@
   background-color: #d41342;
   color: $card-txt-color;
   margin-right: 15px;
+
   @media screen and (max-width: 1280px) {
     margin-top: 54px;
     margin-bottom: 10px;
   }
 }
+
 .franchise-button-franchise {
   background-color: $card-txt-color;
   color: #d41443;
 }
+
 .location-button-location,
 .franchise-button-franchise {
   border-radius: 22px;
@@ -146,12 +143,14 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+
   @media screen and (max-width: 1280px) {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 .franchise-button-franchise::after {
   display: inline-block;
   margin-left: 16px;
@@ -162,6 +161,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .location-button-location::after{
   display: inline-block;
   margin-left: 16px;
@@ -171,7 +171,6 @@
   background-image: url('/images/vector-white.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  
 }
 
 .franchise-button-franchise:hover, .franchise-button-franchise:focus{
