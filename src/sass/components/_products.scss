@@ -221,6 +221,7 @@
   &__btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
 
     width: 40px;
@@ -229,10 +230,5 @@
 
     background-color: $card-txt-color;
     border-color: transparent;
-  }
-
-  &__svg {
-    width: 20px;
-    height: 20px;
   }
 }
