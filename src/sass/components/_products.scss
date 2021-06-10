@@ -1,16 +1,14 @@
 .products {
   list-style: none;
-  margin-top: 144px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-top: 150px;
-
     flex-wrap: wrap;
+    margin-top: -20px;
     margin-left: -20px;
   }
   @media screen and (min-width: $desktop) {
-    margin-top: 259px;
+    margin-top: -24px;
     margin-left: -24px;
   }
 
@@ -21,19 +19,27 @@
     border-radius: 24px;
 
     padding-top: 161px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    }
 
     @media screen and (min-width: $tablet) {
       padding-top: 152px;
       width: 220px;
-
+      margin-top: 20px;
       margin-left: 20px;
-      flex-basis: calc((100% - 3 * 20px) / 3);
+      flex-basis: calc(33.33333% - 20px);
     }
     @media screen and (min-width: $desktop) {
+      padding-top: 163px;
       width: 329px;
       height: 525px;
+      margin-top: 24px;
       margin-left: 24px;
-      flex-basis: calc((100% - 3 * 24px) / 3);
+      flex-basis: calc(33.33333% - 25px);
     }
   }
 
@@ -48,7 +54,7 @@
   &__item--pink {
     background-color: $hero-bg-color;
 
-    ::before {
+    &::before {
       content: '';
       position: absolute;
       top: -50%;
@@ -77,10 +83,11 @@
       }
     }
   }
+
   &__item--yellow {
     background-color: $second-card-color;
 
-    ::before {
+    &::before {
       content: '';
       position: absolute;
       top: -50%;
@@ -112,7 +119,7 @@
 
   &__item--green {
     background-color: $third-card-color;
-    ::before {
+    &::before {
       content: '';
       position: absolute;
       top: -50%;
@@ -128,16 +135,18 @@
       background-position: center;
       background-size: contain;
 
-      @media screen and (min-width: $tablet) {
+      @media screen and (min-width: $tablet) and (max-width: 767px) {
         width: 220px;
         height: 224px;
         background-image: url(../images/products/product3tab.png);
+        background-repeat: no-repeat;
       }
       @media screen and (min-width: $desktop) {
         top: -70%;
         width: 335px;
         height: 335px;
         background-image: url(../images/products/product3big.png);
+        background-repeat: no-repeat;
       }
     }
   }
@@ -207,10 +216,16 @@
     }
   }
 
+  &__wraper {
+    display: flex;
+    justify-content: center;
+  }
+
   &__btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
     width: 40px;
     height: 40px;
@@ -218,8 +233,11 @@
 
     background-color: $card-txt-color;
     border-color: transparent;
-    background-image: url(../images/products/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      transform: rotate(-90deg);
+    }
   }
 }
