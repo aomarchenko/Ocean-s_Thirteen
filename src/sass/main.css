@@ -1900,12 +1900,6 @@ li {
   }
 }
 
-.card-set-container {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1050px;
-}
-
 .contacts-card-contacts {
   padding: 40px 45px;
   border-radius: 24px;
@@ -1919,6 +1913,12 @@ li {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-card-contacts {
+    padding: 20px 25px;
+  }
+}
+
 .contacts-section-contacts {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #fff5f6), color-stop(80%, #ffffff));
   background-image: linear-gradient(to top, #fff5f6 80%, #ffffff 80% 100%);
@@ -1930,7 +1930,8 @@ li {
     background-image: url("../images/overlay.png"), -webkit-gradient(linear, left bottom, left top, color-stop(87%, #fff5f6), color-stop(87%, #ffffff));
     background-image: url("../images/overlay.png"), linear-gradient(to top, #fff5f6 87%, #ffffff 87% 100%);
     background-repeat: no-repeat;
-    background-position: left top 25%;
+    background-position: left top 20%;
+    background-size: contain;
   }
 }
 
@@ -2455,10 +2456,19 @@ li {
 
 .contacts__button {
   display: block;
+  width: 161px;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__button {
+    width: 161px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2470,6 +2480,13 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 367px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__button {
+    width: 393px;
   }
 }
 
@@ -2504,6 +2521,18 @@ li {
   }
 }
 
+.contacts__location::after {
+  display: inline-block;
+  margin-left: 16px;
+  width: 5px;
+  height: 8px;
+  content: '';
+  color: #ffffff;
+  background-image: url("/images/vector-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .contacts__franchise {
   margin-bottom: 113px;
   font-weight: 700;
@@ -2530,6 +2559,23 @@ li {
   .contacts__franchise {
     width: 180px;
   }
+}
+
+.contacts__franchise::after {
+  display: inline-block;
+  margin-left: 16px;
+  width: 5px;
+  height: 8px;
+  content: '';
+  color: #d41443;
+  background-image: url("/images/header/vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contacts__franchise:hover,
+.contacts__franchise:focus {
+  background-color: #ecebeb;
 }
 
 .footer {
