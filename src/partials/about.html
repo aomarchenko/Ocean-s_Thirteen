@@ -5,7 +5,15 @@
             <h2 class="about__title">how it’s made?</h2>
         </div>
         <div class="about__box-img">
-                <img class="about__img" src="./images/gallery/cow.png" alt="cow">
+            <picture>
+                <source srcset="./images/gallery/desktop-cow.png 1x,./images/gallery/desktop-cow@2x.png 2x"
+                media="(min-width: 1200px)">
+                <source srcset="./images/gallery/tablet-cow.png 1x,./images/gallery/tablet-cow@2x.png 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/gallery/cow.png 1x,./images/gallery/cow@2x.png 2x"
+                media="(max-width: 480px)">
+                <img class="about__img" srcset="./images/gallery/cow.png 1x,./images/gallery/cow@2x.png 2x" alt="cow">
+            </picture>
             <div class="about__milk">
                 <ul class="product__list list">
                     <li class="product__item">
@@ -29,13 +37,46 @@
                         </p>
                     </li>
                     <li class="product__item">
-                        <button class="button button__read" type="button">Read more
+                        <button class="button button__read" type="button" me-data-modal-open>Read more
                             <svg class="button__read--more" width="10" height="8">
                                 <use href="../src/images/gallery/icons.svg#icon-more"></use>
                             </svg>
                         </button>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="backdrop-read is-hidden-read" me-data-modal>
+            <div class="modal-read-more">
+                <button class="modal__button" me-data-modal-close>
+                    <svg class="modal__icon--close">
+                        <use href="../src/images/gallery/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="modal-read-more-content">
+                    <ul class="product__list list">
+                        <li class="product__item">
+                            <p class="product__text"> 
+                                Fusce ut velit laoreet, tempus arcu eu, molestie tortor.
+                                Nam vel justo cursus, faucibus lorem eget, egestas eros.
+                                Maecenas eleifend erat at justo fringilla.
+                            </p>
+                        </li>
+                        <li class="product__item">
+                            <p class="product__text product__text--milk">
+                                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                                Mauris rhoncus orci in imperdiet placerat. 
+                                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. 
+                                Cras massa nibh, tincidunt.
+                            </p>
+                        </li>
+                        <li class="product__item">
+                            <p class="product__text product__text--milk product__text--pos">
+                                Aliquam erat volutpat. Aenean accumsan.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
