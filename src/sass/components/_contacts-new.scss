@@ -4,20 +4,21 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 43px;
+  padding-bottom: 58px;
   background: linear-gradient(to top, $footer-bg-color 92%, $card-txt-color 92% 100%);
 
   @media screen and (min-width: 480px) {
     max-width: 768px;
     background: linear-gradient(to top, $footer-bg-color 92%, $card-txt-color 92% 100%);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 0;
-    padding-bottom: 73px;
+    padding-bottom: 78px;
     max-width: 1280px;
     background: linear-gradient(to top, $footer-bg-color 89%, $card-txt-color 89% 100%);
   }
-  @media screen and (min-width: 1280px) {
-    max-width: 2000px;
+  @media screen and (min-width: $desktop) {
+    max-width: 10000px;
     padding-bottom: 85px;
     background-image: url('../images/overlay.png'),
       linear-gradient(to top, $footer-bg-color 87%, $card-txt-color 87% 100%);
@@ -41,23 +42,25 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-right: -20px;
+    margin-bottom: 81px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: -30px;
+    margin-bottom: 86px;
   }
 }
 .contacts-chain > .contacts-card {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 3 - 32px);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc(100% / 3 - 190px);
   }
 }
@@ -77,17 +80,16 @@
     margin-right: auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 50px 31px;
-    margin-bottom: 81px;
     margin-right: 20px;
+    margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 330px;
     margin-right: 30px;
     padding: 51px 44px 62px 43px;
-    margin-bottom: 86px;
   }
 }
 .contacts__foodtruck {
@@ -102,13 +104,13 @@
   border-radius: 4px;
   width: 130px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
     margin-bottom: 30px;
     width: 138px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 32px;
   }
 }
@@ -124,13 +126,13 @@
   border-radius: 4px;
   width: 80px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
     width: 73px;
     font-size: 16px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 32px;
   }
 }
@@ -141,12 +143,12 @@
   color: $second-text-color;
   margin-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 14px;
     font-size: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 10px;
     font-size: 16px;
   }
@@ -157,13 +159,13 @@
   color: $text-color-accent;
   margin-bottom: 25px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.66;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 1.83;
@@ -175,12 +177,12 @@
   border-top: 1px solid $schedule-color;
   border-bottom: 1px solid $schedule-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 30px;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 32px;
     margin-bottom: 32px;
   }
@@ -190,11 +192,11 @@
   line-height: 1.86;
   color: $second-text-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
@@ -203,11 +205,11 @@
   line-height: 1.86;
   color: $label-color;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
@@ -217,12 +219,12 @@
   color: $second-text-color;
   margin-top: 10px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
     margin-top: 16px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
     margin-top: 15px;
   }
@@ -230,11 +232,11 @@
 .contacts__connection {
   margin-top: 25px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 30px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 32px;
   }
 }
@@ -244,12 +246,12 @@
   color: $text-color-accent;
   text-decoration: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.83;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
@@ -259,12 +261,12 @@
   color: $text-color-accent;
   text-decoration: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.83;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
   }
 }
@@ -275,23 +277,24 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 54px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 161px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     width: 367px;
+    margin-top: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 393px;
   }
 }
 .contacts__location {
-  margin-top: 54px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
@@ -305,14 +308,13 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0;
     margin-right: 15px;
     width: 191px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 198px;
   }
 }
@@ -325,10 +327,9 @@
   color: $card-txt-color;
   background-image: url('/images/vector-white.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 6px 8px;
 }
 .contacts__franchise {
-  margin-bottom: 113px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
@@ -341,12 +342,11 @@
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+  @media screen and (min-width: $tablet) {
     width: 174px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 180px;
   }
 }
@@ -364,4 +364,5 @@
 .contacts__franchise:hover,
 .contacts__franchise:focus {
   background-color: #ecebeb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
