@@ -9,8 +9,8 @@
     background-repeat: no-repeat;
         @media screen and (min-width:1200px){
         background-image: url(/images/gallery/big-milk-spray.png), url(/images/gallery/big-milk-spray@2x.png);
-        background-image: image-set("big-milk-spray.png" 1x,
-        "big-milk-pray@2x.png" 2x);
+        // background-image: image-set("big-milk-spray.png" 1x,
+        // "big-milk-pray@2x.png" 2x);
         background-repeat: no-repeat;
         margin: 0 auto;
         align-items: center;
@@ -22,8 +22,8 @@
     @media screen and (max-width:767px) {
         background-image: url(/images/gallery/small-milk-spray.png),
         url(/images/gallery/small-milk-spray@2x.png);
-        background-image: image-set("small-milk-spray.png" 1x,
-        "small-milk-spray@2x.png" 2x);
+        // background-image: image-set("small-milk-spray.png" 1x,
+        // "small-milk-spray@2x.png" 2x);
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
