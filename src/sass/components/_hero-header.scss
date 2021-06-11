@@ -1,7 +1,7 @@
 
 .hero-header {
   position: relative;
-  overflow: hidden;
+  
 
   background-color: $hero-bg-color;
   background-image: url(../images/hero/icecream.png), url(../images/hero/ellipse.png);
@@ -27,8 +27,5 @@
   }
 }
 
-.hero-header{
-    overflow: hidden;
-    
-}
+
 
