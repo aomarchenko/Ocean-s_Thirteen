@@ -42,7 +42,7 @@
 
   &::before {
     position: absolute;
-    top: 30px;
+    top: 28px;
     left: 65px;
     z-index: -1;
 
@@ -92,11 +92,12 @@
   color: $second-text-color;
 
   background-image: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 28px,
-    #e1e1e1 1px,
-    #e1e1e1 29px
+    to top,
+    #e1e1e1,
+    transparent 1px,
+    transparent 30px,
+    #e1e1e1,
+    #e1e1e1 31px
   );
 
   @media screen and (min-width: 768px) {
