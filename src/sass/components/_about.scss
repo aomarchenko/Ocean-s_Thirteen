@@ -6,27 +6,39 @@
 .about__section{
     background-color: $footer-bg-color;
     position: relative;
-    @media screen and (min-width:1280px){
-    background-image: url(/images/gallery/big-milk-spray.png);
     background-repeat: no-repeat;
-    margin: 0 auto;
-    align-items: center;
-    background-position: center;
-    background-position-y: 390px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+        @media screen and (min-width:1200px){
+            background-image: url(/images/gallery/big-milk-spray.png), url(/images/gallery/big-milk-spray@2x.png);
+        background-image: image-set("big-milk-spray.png" 1x,
+        "big-milk-pray@2x.png" 2x);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        align-items: center;
+        background-position: center;
+        background-position-y: 90%;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     @media screen and (max-width:767px) {
-        background-image: url(/images/gallery/milk-spray.png);
+        background-image: url(/images/gallery/small-milk-spray.png),
+        url(/images/gallery/small-milk-spray@2x.png);
+        background-image: image-set("small-milk-spray.png" 1x,
+        "small-milk-spray@2x.png" 2x);
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
-        background-position-y: 720px;
+        background-position-y: 80%;
+    }
+    @media screen and (min-width:768) and (max-width:1199px) {
+        background-image: none;
     }
 }
 .about{
     padding-top: 130px;
     padding-bottom: 97px;
+    @media screen and (min-width: 1200px) {
+        max-width: 1280px;
+      }
 }
 .about__box-img{
     @media screen and (min-width:768px){
@@ -34,7 +46,7 @@
         margin-top: 50px;
     }
     @media screen and (min-width:1200px){
-        margin-left: 74px;
+        padding-left: 74px;
     }
 }
 .about__text{
