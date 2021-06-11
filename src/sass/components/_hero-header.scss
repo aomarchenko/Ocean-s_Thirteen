@@ -1,21 +1,19 @@
-
 .hero-header {
   position: relative;
- 
 
   background-color: $hero-bg-color;
   background-image: url(../images/hero/icecream.png), url(../images/hero/ellipse.png);
   background-repeat: no-repeat;
   background-size: 170px 410px, 344px;
-  background-position: bottom right 32px, bottom 75px right -62px;
+  background-position: 55% 100%, 58% 45%;
 
   @media screen and (min-width: 768px) {
     background-size: 143px 336px, 324px;
-    background-position: bottom right 247px, bottom 46px right 137px;
+    background-position: 55% 100%, 58% 45%;
   }
   @media screen and (min-width: 1280px) {
     background-size: 236px 557px, 538px;
-    background-position: bottom right 450px, bottom 75px right 267px;
+    background-position: 55% 100%, 58% 45%;
   }
 }
 
@@ -25,8 +23,4 @@
   .hero-header {
     background-image: url(../images/hero/icecream@2x.png), url(../images/hero/ellipse@2x.png);
   }
-  
 }
-
-
-
